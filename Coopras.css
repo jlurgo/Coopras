@@ -1,3 +1,53 @@
+body {
+    margin:0;
+    padding:0;
+}
+
 #plantillas{
     display:none;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+#app_coopras #cabecera{
+   /* IE10 Consumer Preview */ 
+    background-image: -ms-linear-gradient(top left, #000000 20%, #FFFFFF 100%);
+    
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(top left, #000000 20%, #FFFFFF 100%);
+    
+    /* Opera */ 
+    background-image: -o-linear-gradient(top left, #000000 20%, #FFFFFF 100%);
+    
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.2, #000000), color-stop(1, #FFFFFF));
+    
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(top left, #000000 20%, #FFFFFF 100%);
+    
+    /* W3C Markup, IE10 Release Preview */ 
+    background-image: linear-gradient(to bottom right, #000000 20%, #FFFFFF 100%);
+    
+    height: 54px;
+    position: relative;
+}
+
+#app_coopras #cabecera #titulo_aplicacion{
+    color: white;
+    font-size: 37px;
+    font-variant: small-caps;
+    font-family: cursive;
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+}
+
+#app_coopras #cabecera #nombre_de_usuario{
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    font-weight: bold;
+    font-size: 20;
 }
