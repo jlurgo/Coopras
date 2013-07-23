@@ -16,8 +16,10 @@ VistaLogin.prototype.start = function(un_panel){
         buttons: [ 
             { text: "Ok", 
              click: function() { 
-                _this.o.callback_usuario(new Usuario(_this.txt_nombre_usuario.val()));
-                _this.o.ui.dialog( "close" );
+                 if(_this.txt_nombre_usuario.val() != ""){
+                    _this.o.callback_usuario(new Usuario(_this.txt_nombre_usuario.val()));
+                    _this.o.ui.dialog( "close" );
+                 }
              } } ]
     }); 
     
